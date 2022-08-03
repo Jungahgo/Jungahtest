@@ -1,0 +1,11 @@
+/*파일에 전체적으로 영향주는 css*/
+
+body {
+    background-color: whitesmoke;
+}
+
+
+*{
+    font-family: 'NeoDunggeunmo';
+}
+

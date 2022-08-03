@@ -1,0 +1,23 @@
+/*main section css*/
+
+#main{
+    background-color: rgb(184, 220, 180);
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 3vmax;
+}
+
+.button{
+    width: 80%;
+    font-size: 3vmax;
+}
+
+p{
+    font-size: 2vmax;
+}
+
+h3{
+    font-size: 3vmax;
+    font-style: initial;
+}
