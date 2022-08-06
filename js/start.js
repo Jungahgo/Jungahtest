@@ -4,9 +4,22 @@ const result = document.querySelector("#result");
 const endPoint = 11;
 var point = 0;
 
-function calResult(){
-    var point = 0;
+
+function setResult(value){
     
+    const resultName = document.querySelector('.resultName');
+    resultName.innerHTML = infoList[value].name;
+
+    var resultImg = document.createElement('img');
+    const imgDiv = document.querySelector('#resultImg');
+    resultImg.src = infoList[value].img;
+    resultImg.alt = value
+
+    imgDiv.appendChild(resultImg)
+
+    const resultDesc = document.querySelector('.resultDesc');
+    resultDesc.innerHTML = infoList[value].desc
+
 }
 
 function goResult(){
@@ -23,6 +36,21 @@ function goResult(){
         }, 450)})
 
     console.log(point);
+
+    if (point<2){
+        setResult(0);
+    }else if(point<4){
+        setResult(1);
+    }else if(point<6){
+        setResult(2);
+    }else if(point<8){
+        setResult(3);
+    }else if(point <10){
+        setResult(4);
+    }else{
+        setResult(5);
+    }
+
 }
 
 function addAnswer(answerText, qIdx, idx){
